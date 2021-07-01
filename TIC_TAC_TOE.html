@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Author: Mahadi Abuhuraira
+            contact: mamt4real@gmail.com 08064241674
+            github: @mamt4real
+            date: June/2021
+        --> 
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div id="main">
+            <div id="controls">
+                <nav class="dropdown">
+                    <button onclick="showMenu()" class="dropbtn">Settings</button>
+                    <div class="dropdown-content" id="menu">
+                        <button onclick="reset(1)">reset</button>
+                        <button onclick="showHelp()">help</button> 
+                        <div id="mode-control">
+                            <button onclick="" id="mode-btn">Mode &nbsp;&nbsp;&nbsp;&nbsp;></button>
+                            <div class="dropdown-content" id="mode">
+                                <button onclick="activateAuto(false)">Multiplayer</button> 
+                                <button onclick="activateAuto(true)">Single Player</button>
+                            </div>
+                        </div>
+                        <div id="diff-control" style="display: none;">
+                            <button onclick="" id="diff-btn">Difficulty &nbsp;&nbsp;&nbsp;&nbsp;></button>
+                            <div class="dropdown-content" id="diff">
+                                <button onclick="setDifficulty('easy')">Easy</button> 
+                                <button onclick="setDifficulty('normal')">Normal</button>
+                                <button onclick="setDifficulty('hard')">Hard</button>
+                            </div>
+                        </div>         
+                    </div>
+                    <div class="dropdown-content" id="help">
+                        <h4>HELP</h4>
+                        <p>
+                            This is a simple game known as Tic-tac-toe.
+                            Its played by two players tagged X and O.
+                            Each player take a turn by placing his sign on one of the available tile.
+                            player wins if he was able to align 3 of his symbols either vertical,horizontal or diagonal.
+                        </p>
+                        <div class="close">
+                            <button onclick="hideHelp()">Close</button>
+                        </div>
+                    </div>
+                    <h3 id="mode-head">Multiplayer</h3>
+                </nav>
+                <div class="score-turn">
+                    <div>
+                        <table border="border">
+                            <span style="margin:0px 15px; text-align:center;">Scores</span>
+                            <tr>
+                                <th>Player X</th><td id="x_score">0</td>
+                            </tr>
+                            <tr>
+                                <th>Player O</th><td id="o_score">0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <h3 id="turn">Player X's turn</h3>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="game">
+                <button id="b1" class ="btns" onclick="click_func(this.id)"></button>
+                <button id="b2" class ="btns" onclick="click_func(this.id)"></button>
+                <button id="b3" class ="btns" onclick="click_func(this.id)"></button>
+                <button id="b4" class ="btns" onclick="click_func(this.id)"></button>
+                <button id="b5" class ="btns" onclick="click_func(this.id)"></button>
+                <button id="b6" class ="btns" onclick="click_func(this.id)"></button>
+                <button id="b7" class ="btns" onclick="click_func(this.id)"></button>
+                <button id="b8" class ="btns" onclick="click_func(this.id)"></button>
+                <button id="b9" class ="btns" onclick="click_func(this.id)"></button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

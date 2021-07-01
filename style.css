@@ -1,0 +1,144 @@
+/*
+    Author: Mahadi Abuhuraira
+    contact: mamt4real@gmail.com 08064241674
+    github: @mamt4real
+    date: June/2021
+*/
+#main{
+    margin: 0 auto;
+    max-width: 320px;
+}
+#game{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:3%;
+    width:95%;
+    height:300px;
+    padding: 3%;
+}
+.btns{
+    background-color: green;
+    color: white;
+    width:95px;
+    height:95px;
+    padding: auto auto;
+    text-align:center;
+    font-weight: 900;
+    font-size:40px;
+}
+table{
+    border-collapse: collapse;
+    margin:10px;
+}
+td{
+    width: 50px;
+    color: red;
+    text-align: center;
+}
+#controls{
+    width:100%;
+    background-color:cornsilk;
+    width:100%;
+}
+nav{
+    width: 95%;
+    background-color: rgb(247, 241, 206);
+    padding: 5px 5px;
+}
+.dropbtn{
+    background-color: rgb(158, 152, 124);
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color: #f1f1f1;
+    min-width:100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+.dropdown-content button{
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    width:100%;
+    text-align: left;
+    border:none;
+    text-transform: capitalize;
+    display:block;
+}
+.dropdown-content button:hover{
+    background-color: #ddd;
+}
+.dropbtn:hover{
+    background-color: darkblue;
+}
+#help{
+    min-width:95%;
+    background-color: floralwhite;
+    color:black;
+    padding:15px;
+    text-align:justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.close button{
+    margin: 0px auto;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    padding:10px;
+    width:6em;
+}
+.close button:hover{
+    background-color: darkred;
+}
+#help h4{
+    text-align: center;
+    text-decoration-line: underline;
+    color:darkslategray;
+    margin:0;
+    padding:0;
+}
+.score-turn{
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+#turn{
+    margin: 20% 5%;
+}
+#mode{
+    min-width: 100px;
+}
+#mode-btn{
+    display:inline-block;
+}
+#mode-control:hover #mode{
+    display:inline-block;
+}
+#diff{
+    min-width: 100px;
+}
+#diff-btn{
+    display:inline-block;
+}
+#diff-control:hover #diff{
+    display:inline-block;
+}
+#mode-head{
+    margin:0px auto;
+    color: brown;
+    display:inline-block;
+    text-align: center;
+    width:70%;
+}
