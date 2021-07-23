@@ -4,9 +4,16 @@
     github: @mamt4real
     date: June/2021
 */
+@media screen and (min-width:800px){
+	/* center the content for desktop */
+	#main{
+    	margin: 0 auto;
+    	max-width: 320px;
+	}
+}
+/*for mobile devices appear full screen */
 #main{
-    margin: 0 auto;
-    max-width: 320px;
+    width: 100%;
 }
 #game{
     background-color: aqua;
@@ -25,7 +32,7 @@
     padding: auto auto;
     text-align:center;
     font-weight: 900;
-    font-size:40px;
+    font-size:50px;
 }
 table{
     border-collapse: collapse;
